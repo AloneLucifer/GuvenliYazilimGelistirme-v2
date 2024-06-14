@@ -1,0 +1,142 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #282a36;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .site-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .site-name a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .user-info span {
+    margin-right: 15px;
+}
+
+.navbar .logout-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 70px; /* Navbar ile içerik arasında boşluk bırak */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-detail {
+    text-align: center;
+    background-color: #44475a;
+    border: 1px solid #6272a4;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.recipe-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.comments-section {
+    margin-top: 40px;
+    background-color: #44475a;
+    border: 1px solid #6272a4;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    color: #fff;
+}
+
+.comments-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.comment p {
+    margin: 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    color: #000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.form-control[readonly] {
+    background-color: #e9ecef;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

